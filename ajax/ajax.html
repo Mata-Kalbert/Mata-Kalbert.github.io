@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CIT 261 Kalbert Mata</title>
+</head>
+
+<body>
+    <h1>Using XMLHTTPRequest to Consume a JSON Web Service</h1>
+    <p>XMLHTTP Requests help us access JSON data. </p>
+    <p>AJAX allows web pages to be updated  by exchanging data with a web server behind the scenes. They do this with a combination of XMLHTTPRequest objetcs and Javascript.</p>
+    <p>This can be helpful, for example, to create a menu. In this example we can see how we can access a list of links (which could be modified to create a menu):</p>
+    <button onclick="loadDoc('ajaxlinks.txt', myFunction)">See Ajax in Action!</button><br>
+    <div id="demo"></div>
+    <p>XMLHTTPRequests can also be used to access header information (in this case for the txt file used in the example above), as in this example:</p>
+    <div>
+        <h3>Last Modified:</h3><span id="demo2"></span>
+        <h3>Content Type:</h3><span id="demo3"></span>
+    </div>
+ <script src="ajax.js"></script>   
+</body>
