@@ -1,15 +1,46 @@
 // Local Storage
-if (typeof(Storage) !== "undefined") {
-    localStorage.setItem("name", " Kalbert Mata");
-    document.getElementById("resultlocal").innerHTML = localStorage.getItem("name");
-  } else {
-    document.getElementById("resultlocal").innerHTML = "Sorry, your browser does not support Web Storage...";
+localStorage.setItem("storedclass", "This page is for CIT 261");
+document.getElementById("class").innerHTML = localStorage.getItem("storedclass");
+
+ // Colors app 
+  var form = document.querySelector('form')
+  var ul = document.querySelector('ul')
+  var button = document.querySelector('button')
+  var input = document.getElementById('item')
+  let itemsArray = []
+  let items
+
+if (localStorage.getItem('items')) {
+  items = JSON.parse(localStorage.getItem('items'))
+} else {
+  items = []
+}
+
+localStorage.setItem('items', JSON.stringify(itemsArray))
+const data = JSON.parse(localStorage.getItem('items'))
+
+  const liMaker = text => {
+    const li = document.createElement('li')
+    li.textContent = text
+    ul.appendChild(li)
   }
 
- // Session storage 
-  if (typeof(Storage) !== "undefine") {
-    localStorage.setItem("state", " Utah");
-    document.getElementById("resultsession").innerHTML = localStorage.getItem("state");
-  } else {
-    document.getElementById("resultsession").innerHTML = "Sorry, your browser does not support Web Storage...";
-  }
+  form.addEventListener('submit', function(e) {
+    e.preventDefault()
+  
+    itemsArray.push(input.value)
+    localStorage.setItem('items', JSON.stringify(itemsArray))
+    liMaker(input.value)
+    input.value = ''
+  })
+
+  data.forEach(item => {
+    liMaker(item)
+  })
+
+  button.addEventListener('click', function() {
+    localStorage.clear()
+    while (ul.firstChild) {
+      ul.removeChild(ul.firstChild)
+    }
+  })

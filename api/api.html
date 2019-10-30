@@ -8,10 +8,21 @@
 
 <body>
     <h1>Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</h1>
-    <p>We can data on the browser in two ways, with local storage and with sessions.</p>
-    <p>Here's an example of data stored locally, which doesn't get cleaned up automatically:</p>
-    <span>Stored Name:</span><span id="resultlocal"></span>
-    <p>Here's an example of data stored in a session, which gets erased when the browser closes:</p>
-    <span>Stored Name:</span><span id="resultsession"></span>
+    <p>We can add data on the browser in two ways, with local storage and with sessions.</p>
+    <p>With local storage the data doesn't get cleaned up automatically, with sessions, the data is lost when the browser closes.</p>
+    
+    <p>Here's an example of data stored that was stored locally, printed out:</p>
+    <div id="class"></div>
+    
+   <p>Here's an example using local storage to get a list of colors from the user and print them out one by one, using an array.</p>
+    <h2>Enter Your Favorite Colors:</h2>
+    <form>
+        <input id="item" type="text" placeholder="New" required />
+        <input type="submit">
+    </form>
+    <h2>Colors</h2>
+    <ul></ul>
+    <button>Clear All</button>
+
 <script src="api.js"></script> 
 </body>

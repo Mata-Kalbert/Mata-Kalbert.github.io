@@ -53,12 +53,23 @@ h1 {
     color: #ffffff;
 
 }
+
 .code a:active{
     color: #121311;
 }
 .code:hover {
    background-color: #444444;
    transition: 0.9s all linear;
+}
+.code a:hover{
+    color: lightcyan;
+    font-size: 3rem;
+
+}
+.code a:active{
+    border-radius:35px;
+    background-color: rgb(121, 89, 143);
+    padding: 10px;
 }
 
 .footer {
