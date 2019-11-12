@@ -1,0 +1,81 @@
+@keyframes go-left-right {        
+    from { left: 150px; }           
+     
+    to { left: calc(10% - 300px); }   
+  }
+  
+@keyframes go-lefty-right {        
+    from { right: -20px; }             
+    to { right: calc(10% - 100px); }  
+  }
+
+body{
+  background-color: lightblue;
+}
+.kickball {
+  animation: go-left-right 5s infinite alternate;
+  position: relative;
+     height: 0px;
+    width: 0px;
+   border-right: 40px solid blue;
+  border-top: 40px solid yellow;
+  border-left:40px solid red;
+  border-bottom:40px solid orange;
+    border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+     margin: 150px auto;
+     transform-origin: left top;
+     transition: transform 3s;
+  
+}
+.kickball:hover{
+ transform: rotate(500deg);
+   }
+.circle {
+  animation: go-left-right 8s infinite alternate;
+  position: relative;
+  height: 0px;
+    width: 0px;
+   border-right: 40px solid blue;
+  border-top: 40px solid yellow;
+  border-left:40px solid red;
+  border-bottom:40px solid orange;
+    border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+  margin: 150px auto;
+}
+.ball2:hover{
+  position:relative;
+   transform: scale(2);
+   transition: all 1s;
+  border-right: 40px solid transparent;
+  border-top: 40px solid yellow;
+  border-left:40px solid yellow;
+  border-bottom:40px solid yellow;
+  border-top-left-radius: 99px;
+  border-top-right-radius: 100px;
+    border-bottom-left-radius: 99px;
+    border-bottom-right-radius: 100px;
+}
+  .eye {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: -30px;
+    right: -30px;
+  
+  }
+.eye:hover{
+  animation: go-lefty-right 10s infinite alternate;
+  position: relative;
+  background: white;
+  width: 30px;
+  height: 30px;
+   top: -16px;
+   right: -20px;
+}
