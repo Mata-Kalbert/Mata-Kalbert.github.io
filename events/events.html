@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CIT 261 Kalbert Mata</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body onload="alertPage()">
+    <h1>Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events</h1>
+    <p>Javascript can react to different events in a page.</p>
+    <h2>On Click</h2>
+    <p>We can use On Click to start an event when the user clicks a button. For example:</p>
+    <button onclick="getDate()">Get Date</button>
+    <div id="date"></div>
+    <h2>On Load</h2>
+    <p>When we use On Load the event is triggered when the page is done loading.</p>
+    <h2>On Mouse Over and On Mouse Out</h2>
+    <p>When we use On Mouse Over the event is triggered by going over the area with the mouse.</p>
+    <p onmouseover="changeStyle()" onmouseout="styleBack()" id="article1">We believe in God, the Eternal Father, and in His Son, Jesus Christ, and in the Holy Ghost.</p>
+    <h2>On Touch Begin</h2>
+    <p>We can trigger an event on devices that have touch using On Touch.</p>
+    <p>Note: The example won't work unless you are on a touch device!</p>
+    <p ontouchstart="color()" id="touch">We believe that men will be punished for their own sins, and not for Adam’s transgression.</p>
+    <h2>Event Listener</h2>
+    <p>The event listener method allows us to attach an event handler to any DOM element. </p>
+    <p>For example we can use it with On Click:</p>
+    <button id="message">Click me!</button>
+    <div id="text"></div>
+    <p>Or we can use it with Mouse Move:</p>
+    <p id="article3">We believe that through the Atonement of Christ, all mankind may be saved, by obedience to the laws and ordinances of the Gospel.</p>
+    <h2>Animation and Transition</h2>
+    <p>We can use event handlers to control animations and transitions too.</p>
+    <p>In this example we use an animation:</p>
+    <button onclick="startAnimation()">Faster Animation</button>
+    <div id="square"></div>
+    <p>And here we can see a transition when we hover over the element, and when it's done, we use JavaScript to change its color:</p>
+    <div id="square2"></div>
+<script src="events.js"></script>
+</body>

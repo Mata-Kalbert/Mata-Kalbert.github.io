@@ -1,0 +1,33 @@
+.article1style {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(211, 160, 160);
+    border: 2px solid darkgrey;
+    border-radius: 2%;
+    padding: 2%;
+    width: 20%;
+}
+#square {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position: relative;
+    animation: mymove 4s infinite;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 500px;}
+}
+@keyframes fastermove {
+    from {left: 0px;}
+    to {left: 500px;}
+}
+#square2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+#square2:hover {
+    width: 600px;
+}
