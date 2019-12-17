@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="mainApp.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather CIT261</title>
+</head>
+<body>
+    <div class="app">
+        <h1>Weather City</h1>
+        <div class="input">
+            <label>Please enter a city name:</label><br>
+            <input type="text" class="city"><br>
+            <input type="submit" value="Go!" class="button" onclick="playclip('click.mp3')">
+        </div>
+        <div id="error"></div>
+        <div class="weather" id="weather">
+            <div class="icondiv">
+                <div id="description"></div>
+                <div id="icon"></div>
+            </div>
+            <h1 id="temp"></h1>
+            <div class="location" id="location"></div>
+        </div>
+    </div>
+   
+    <script src="mainApp.js"></script>
+</body>
+
+
+</html>

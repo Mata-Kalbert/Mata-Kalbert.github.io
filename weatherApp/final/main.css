@@ -1,0 +1,110 @@
+.app {
+    width: 40%;
+    height: 650px;
+    margin: 0 auto;
+    border: 3px solid #75858d;
+    background-color: #99bbcb;
+    box-shadow: 0 5px 5px 5px #777;
+    overflow: scroll;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #fff;
+    text-shadow: .1em .1em 0 rgba(0,0,0,0.3);   
+    background-image: linear-gradient(to right top, #99bbcb, #a5c7d7, #b1d4e2, #bde0ee, #c9edfa);
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    padding-top: 5%;
+}
+
+@keyframes icon-bounce {
+    0% {transform: none;}
+    25% {transform: rotate(-15deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(15deg);}
+    100% {transform: rotate(0deg);}
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    animation: icon-bounce 2s linear infinite;
+}
+
+p {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.input {
+    display: block;
+    text-align: center;
+    padding-top: 5%;
+}
+
+input[type="text"] {
+    font-size:24px;
+}
+
+input[type="submit"] {
+    padding: 7px 25px;
+    color: white;
+    background-color: #63747c;
+    font-size: 15px;
+}
+
+input[type="submit"]:hover {
+    color: white;
+    background-color: #274655;
+}
+
+input {
+    margin: 1%;
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transform: translate3d(0, -100vw, 0);
+}
+
+.seeresults {
+    transform: translate3d(0, 0vw, 0);
+    transition-duration: 1s;
+}
+
+.icondiv {
+    justify-self: center;
+    align-self: center;
+}
+
+.location {
+    grid-column: 1 / span 2;
+    justify-self: center;
+}
+
+body.sunny {
+    background-image: linear-gradient(to right top, #ff4e50, #ff713e, #ff932b, #ffb41d, #f9d423);
+}
+
+body.cloudy {
+    background-image: linear-gradient(to right top, #63747c, #71858e, #7f96a0, #8da8b2, #9bbac5);
+}
+
+body.rainy {
+    background-image: linear-gradient(to right top, #637c7b, #718e8c, #7ea09e, #8db2b0, #9bc5c3);
+}

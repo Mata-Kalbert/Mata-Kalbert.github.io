@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+  <title>Weather</title>
+</head>
+<body>
+    <div class="app">
+        <h1>The Weather App</h1>
+        <div class="input">
+            <label>What city do you live in?</label><br>
+            <input type="text" class="city"><br>
+            <input type="submit" value="Go!" class="button">
+        </div>
+        <div id="error"></div>
+        <div class="weather" id="weather">
+            <div class="icondiv">
+                <div id="description"></div>
+                <div id="icon"></div>
+            </div>
+            <h1 id="temp"></h1>
+            <div class="location" id="location"></div>
+        </div>
+    </div>
+  <script src="weather.js"></script>
+</body>
+</html>
