@@ -32,12 +32,13 @@ main {
     margin-top: 0;
 
 } 
- main p {
+.code p {
     margin: 2% 20%;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 h1 {
+    color: #ffffff;
     margin-top: 0;
     padding-top: 3%;
     margin-bottom: 0;
@@ -61,10 +62,10 @@ h1 {
 }
 .code:hover {
    background-color: #444444;
-   transition: 0.9s all linear;
+   transition: 0.5s all linear;
 }
 .code a:hover{
-    color: lightcyan;
+    color: rgb(136, 141, 161);
     font-size: 3rem;
 
 }
@@ -76,12 +77,23 @@ h1 {
 
 .footer {
     background-color: rgb(136, 141, 161);
+    
     text-align: center;  
     padding: 4%;
     color: #ffffff;
+    font-size: 2.3rem;
 
 }
 .footer:hover{
+    
     background-color: #444444;
-    transition: 0.9S ALL linear;
+    transition: 0.5S ALL linear;
+}
+.footer a:hover{
+    text-decoration: none;
+    color: rgb(121, 89, 143);
+    
+}
+.footer a {
+    color: #ffffff;
 }
